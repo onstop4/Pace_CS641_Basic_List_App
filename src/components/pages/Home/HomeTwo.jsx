@@ -5,7 +5,7 @@ import { Text, TouchableOpacity, View } from 'react-native';
 const HomeTwoScreen = ({ navigation }) => {
     return <View>
         <Text>Home Two Screen</Text>
-        <TouchableOpacity onPress={() => navigation.navigate('Home')}>
+        <TouchableOpacity onPress={() => navigation.push('Home')}>
             <Text>Go to different page</Text>
         </TouchableOpacity>
     </View>
