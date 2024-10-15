@@ -1,4 +1,11 @@
 import { registerRootComponent } from 'expo';
 import App from './src/App';
+import { NavigationContainer } from '@react-navigation/native';
 
-registerRootComponent(App);
+const AppComponent = () => {
+    return <NavigationContainer>
+        <App />
+    </NavigationContainer>
+}
+
+registerRootComponent(AppComponent);
